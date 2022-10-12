@@ -1,0 +1,182 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+/* .App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;}
+   */
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
+/* @import url(" src="https://kit.fontawesome.com/5e15c90f46.js" crossorigin="anonymous""); */
+
+:root {
+  --color-bg-body: #2a2a2a;
+  /* kolor background sekcji */
+  --color-bg-container: #343a40;
+  --color-text-p: #bfbfbf;
+  /* color dla hederów różnych sekcji */
+  --color-bg-header: #212529;
+  --color-text-input: #212529;
+  /* kolor buttona / textu placeholdera/label */
+  --color-bg-button: #6c757d;
+  --color-text-header: #fffdfd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  font-family: Alata, Helvetica, sans-serif;
+  background-color: var(--color-bg-body);
+  color: var(--color-text-p);
+}
+#body {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.container {
+  background: var(--color-bg-container);
+  border-radius: 2px;
+  box-shadow: 0px 8px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.header {
+  /* margin-bottom: 20px; */
+  padding: 15px;
+  background: var(--color-bg-header);
+  color: var(--color-text-header);
+  text-align: center;
+  box-shadow: 0px 8px 10px 0 rgba(0, 0, 0, 0.2);
+}
+svg {
+  padding: 5px;
+  width: 40px;
+  background-color: var(--color-text-p);
+  border-radius: 5px 0 0 5px;
+}
+section,
+form {
+  width: 49%;
+  margin: 0 auto;
+}
+
+p {
+  padding: 20px 10px;
+  line-height: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form .header {
+  margin-bottom: 20px;
+}
+
+.container-input {
+  display: flex;
+  margin: 10px 20px;
+}
+label,
+input,
+button {
+  font-size: 16px;
+}
+label {
+  margin-left: 20px;
+}
+
+input,
+button {
+  padding: 10px;
+  border: none;
+}
+
+input {
+  width: 100%;
+  font-family: Alata, Helvetica, sans-serif;
+  color: var(--color-text-input);
+  border-radius: 0 3px 3px 0;
+}
+input:focus {
+  border: none;
+  /* zobaczymy dalej */
+  outline: 1px solid var(--color-bg-header);
+}
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  margin: 10px 20px;
+  background: var(--color-bg-button);
+  color: var(--color-text-p);
+  transition: 0.3s;
+  border-radius: 3px;
+}
+form button:hover {
+  cursor: pointer;
+  background-color: rgb(81, 88, 94);
+}
+form button svg {
+  width: 30px;
+  margin-right: 5px;
+  background-color: transparent;
+  fill: var(--color-text-p);
+}
+
+@media (max-width: 600px) {
+  #body {
+    flex-direction: column;
+  }
+  form,
+  section {
+    width: 100%;
+  }
+}
