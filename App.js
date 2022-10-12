@@ -4,6 +4,8 @@ import User from "./User";
 import Key from "./Key";
 import Email from "./Email";
 import Submit from "./Sumbit";
+import Feather from "./Feather";
+import Registration from "./Registration";
 
 function App() {
   return (
@@ -19,8 +21,11 @@ function App() {
             become the strongest!!!
           </p>
         </article>
-        <article className="container update">
-          <h2 className="header update">Last update</h2>
+        <article className="container">
+          <div className="header update">
+            <Feather />
+            <h2>Last update</h2>
+          </div>
           <p>
             Updated mystery boxes and their drop chance. The amount of items
             dropped will now scale with character level. Removed fish, meat and
@@ -30,7 +35,10 @@ function App() {
         </article>
       </section>
       <form action="/register" className="container">
-        <h2 className="header create">Create your account:</h2>
+        <div className="header update">
+          <Registration />
+          <h2>Create your account:</h2>
+        </div>
         <label htmlFor="login">Xumm Wallet Address:</label>
 
         <div className="container-input">
